@@ -642,6 +642,7 @@ footer .container .content .links ul li a{
         justify-content: space-between;
         width: 90%;
         position: fixed;
+        margin: 10px 0;
     }
     
     #navbar .navlinks,
@@ -651,7 +652,7 @@ footer .container .content .links ul li a{
 
     #navbar a #menuBar{
         width: 30px;
-        display: inline;
+        display: flex;
     }
 
     h1{
