@@ -106,8 +106,7 @@ nav .logo #menuBar{
     margin-top: 80px;
 }
 
-#hero .container .content button:hover,
-#hero #btnwsapp:hover{
+#hero .container .content button:hover{
     cursor: pointer;
 }
 
@@ -174,12 +173,12 @@ h1{
     right: 50px;
 }
 
-#hero #button:hover{
+#hero #btnwsapp:hover{
     background-color: #042875;
     transition: .3s ease-in;
 }
 
-#hero #button img{
+#hero #btnwsapp img{
     width: 50px;
 }
 
