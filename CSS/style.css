@@ -649,9 +649,9 @@ footer .container .content .links ul li a{
         display: none;
     }
 
-    #navbar a #menuBar{
+    #navbar a #menuBar img{
         width: 30px;
-        display: flex;
+        display: inline;
     }
 
     h1{
