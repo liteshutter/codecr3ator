@@ -35,8 +35,8 @@ header{
     transition: box-shadow 0.3s ease;
 }
 
-nav .logo #menuBar{
-    display: hidden;
+nav .logo #menuBar img{
+    display: none;
 }
 
 .logo #cclogo img{
@@ -626,23 +626,23 @@ footer .container .content .links ul li a{
         padding: 0;
     }
 
-    /* section{
-        width: 100%;
-        margin: auto;
-    } */
-
     nav{
         display: flex;
         flex-direction: row;
         gap: 100px;
     }
 
+    #navbar{
+        height: 5rem;
+    }
+
     #navbar .logo{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 90%;
         position: fixed;
-        padding: 10px 0;
+        top: 20px;
     }
     
     #navbar .navlinks,
@@ -650,9 +650,16 @@ footer .container .content .links ul li a{
         display: none;
     }
 
-    #navbar a #menuBar img{
-        width: 25px;
+    #navbar #menuBar{
+        background-color: #276FD8;
+        padding: 5px;
         display: flex;
+        border-radius: 5px;
+    }
+
+    #navbar #menuBar img{
+        width: 35px;
+        display: inline;
     }
 
     h1{
