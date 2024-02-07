@@ -106,7 +106,8 @@ nav .logo #menuBar{
     margin-top: 80px;
 }
 
-#hero .container .content button:hover{
+#hero .container .content button:hover,
+#hero #button:hover{
     cursor: pointer;
 }
 
