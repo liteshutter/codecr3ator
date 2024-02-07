@@ -39,7 +39,7 @@ nav .logo #menuBar{
     display: none;
 }
 
-.logo img{
+.logo #cclogo img{
     display: flex;
     align-items: center;
     justify-content: center;
