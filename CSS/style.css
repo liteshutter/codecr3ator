@@ -633,7 +633,7 @@ footer .container .content .links ul li a{
     }
 
     #navbar{
-        height: 6rem;
+        height: 4rem;
     }
 
     #navbar .logo{
@@ -642,7 +642,7 @@ footer .container .content .links ul li a{
         align-items: center;
         width: 90%;
         position: fixed;
-        top: 20px;
+        top: 10px;
     }
     
     #navbar .navlinks,
