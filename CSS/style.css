@@ -35,7 +35,7 @@ header{
     transition: box-shadow 0.3s ease;
 }
 
-nav .logo a img{
+nav .logo a #menuBar{
     display: none;
 }
 
