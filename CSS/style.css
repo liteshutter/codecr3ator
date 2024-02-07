@@ -107,7 +107,7 @@ nav .logo #menuBar{
 }
 
 #hero .container .content button:hover,
-#hero #button:hover{
+#hero #btnwsapp:hover{
     cursor: pointer;
 }
 
