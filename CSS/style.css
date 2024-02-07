@@ -682,11 +682,15 @@ footer .container .content .links ul li a{
     }
 
     #hero #btnwsapp{
-    width: 45px;
-    height: 45px;
-    bottom: 30px;
-    right: 30px;
-}
+        width: 45px;
+        height: 45px;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    #hero #btnwsapp img{
+        width: 35px;
+    }
 
     #highlight .container{
         width: 90%;
