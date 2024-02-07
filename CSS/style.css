@@ -160,7 +160,7 @@ h1{
     width: 500px;
 }
 
-#hero #button{
+#hero #btnwsapp{
     position: fixed;
     display: flex;
     flex-direction: column;
