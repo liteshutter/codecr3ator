@@ -100,6 +100,10 @@ nav .logo a img{
     margin-top: 80px;
 }
 
+#hero .container #button:hover{
+    cursor: pointer;
+}
+
 #hero .container .content .contentA{
     display: flex;
     flex-direction: column;
