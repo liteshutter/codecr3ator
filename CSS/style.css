@@ -36,7 +36,7 @@ header{
 }
 
 nav .logo #menuBar{
-    display: none;
+    margin-top: 100px;
 }
 
 .logo #cclogo img{
@@ -649,9 +649,9 @@ footer .container .content .links ul li a{
         display: none;
     }
 
-    #navbar a #menuBar img{
+    #navbar a #menuBar{
         width: 30px;
-        display: inline;
+        margin-top: 0;
     }
 
     h1{
