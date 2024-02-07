@@ -100,7 +100,7 @@ nav .logo a img{
     margin-top: 80px;
 }
 
-#hero .container #button:hover{
+#hero .container .content button:hover{
     cursor: pointer;
 }
 
