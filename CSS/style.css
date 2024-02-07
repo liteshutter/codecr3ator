@@ -643,17 +643,13 @@ footer .container .content .links ul li a{
         width: 90%;
         position: fixed;
     }
-
-    #navbar .logo #menuBar{
-        opacity: 100%;
-    }
     
     #navbar .navlinks,
     #logomarks{
         display: none;
     }
 
-    #navbar a img{
+    #navbar a #menuBar{
         width: 30px;
         display: flex;
     }
