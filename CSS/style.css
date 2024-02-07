@@ -36,7 +36,7 @@ header{
 }
 
 nav .logo #menuBar{
-    display: none;
+    opacity: 0;
 }
 
 .logo #cclogo img{
@@ -642,6 +642,10 @@ footer .container .content .links ul li a{
         justify-content: space-between;
         width: 90%;
         position: fixed;
+    }
+
+    #navbar .logo #menuBar{
+        opacity: 100%;
     }
     
     #navbar .navlinks,
