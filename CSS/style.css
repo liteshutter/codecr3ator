@@ -15,71 +15,84 @@ body{
     color: #3E3E3E; 
 }
 
-header{
+/* Navbar starts */
+
+:root{
+    --blue: #0d6efd;
+    --darkgray: #3d3d3d;
+    --white: #fff;
+}
+
+.nav-container{
+    width: 100%;
+    background-color: var(--darkgray);
     position: fixed;
-    top: 0; right: 0; left: 0;    
     z-index: 2;
 }
 
-#navbar{
-    position: relative;
-    display: flex;
+.navbar{
+    display: grid;
+    grid-template-columns: .2fr auto 1fr;
     align-items: center;
-    justify-content: space-around;   
-    height: 50px;
+    height: 80px;
+    width: 80%;
+    max-width: 1720px;
+    margin: 0 auto;
 }
 
-.navbar-shadow{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #dde9ff;
-    transition: box-shadow 0.3s ease;
-}
-
-nav .logo #menuBar img{
-    display: none;
-}
-
-.logo #cclogo img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar img{
     width: 180px;
 }
 
-.navlinks ul{
-    display: flex;
-    gap: 50px;
-    align-items: center;   
+#navbar-logo{
+    color: var(--white);
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
 }
 
-.navlinks ul li{
-    list-style: none;    
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    justify-self: end;
 }
 
-.navlinks ul li a{
-    text-decoration: 0;
-    color: #0e0e0e;
-    font-size: 16px;
-    font-weight: 400;
+.nav-links{
+    color: var(--white);
+    text-decoration: none;
 }
 
-.navlinks ul li #btn{
-    padding: 4px 14px;
-    border: 0;
-    border-radius: 20px;  
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px;
-    font-size: 14px;
-    font-weight: 400;
-    background: #99D4E3;
+.nav-links:hover{
+    color: var(--blue);
+    transition: all .3s ease-in-out;
 }
 
-.navlinks ul li #btn img{
+.nav-links-btn{
+    background-color: var(--blue);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.nav-links-btn:hover{
+    background-color: transparent;
+    color: var(--blue);
+    border-radius: 10px;
+    border: solid 1px var(--blue);
+    transition: all .3s ease-out;
+}
+
+.menu-toggle .bar{
     width: 25px;
-    height: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all .3s ease-in-out;
+    background: var(--white);
 }
+
+/* Navbar ends*/
 
 /* Hero Section Start */
 
@@ -630,40 +643,95 @@ footer .container .content .links ul li a{
         padding: 0;
     }
 
-    nav{
-        display: flex;
-        flex-direction: row;
-        gap: 100px;
-    }
-
-    #navbar{
-        height: 4rem;
-    }
-
-    #navbar .logo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
+    .nav-container{
         position: fixed;
-        top: 10px;
-    }
-    
-    #navbar .navlinks,
-    #logomarks{
-        display: none;
     }
 
-    #navbar #menuBar{
-        background-color: #276FD8;
-        padding: 5px;
-        display: flex;
-        border-radius: 5px;
+    .nav-menu{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: var(--blue);
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        opacity: 0;
+        transition: all.5s ease;
     }
 
-    #navbar #menuBar img{
-        width: 35px;
-        display: inline;
+    #navbar-logo{
+        margin-left: 20px;
+    }
+
+    .nav-menu.active{
+        background: var(--darkgray);
+        left: 0;
+        opacity: 1;
+        transition: all .5s ease;
+    }
+
+    .nav-links{
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover{
+        background-color: var(--white);
+        color: var(--blue);
+        transition: all .4s ease-out;
+    }
+
+    .navbar{
+        width: 90%;
+    }
+
+    .nav-links-btn{
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        background-color: var(--darkgray);
+        color: var(--white);
+        transition: all .4s ease-out;
+    }
+
+    .nav-links-btn:hover{
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        background-color: var(--blue);
+        color: var(--white);
+        transition: all .4s ease-out;
+    }
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .menu-toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle:hover{
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     h1{
@@ -674,6 +742,10 @@ footer .container .content .links ul li a{
     .contacts p, p{
         width: 90%;
         text-align: justify;
+    }
+
+    #logomarks{
+        display: none;
     }
 
     #hero #webflow, #hero #button{
