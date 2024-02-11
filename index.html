@@ -12,54 +12,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,400;1,600;1,800;1,900&display=swap" rel="stylesheet">
 
+    <script>
+        document.addEventListener('contextmenu', function (e){
+            e.preventDefault();
+        })
+    </script>
+
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="logo">
-                <a href="#hero" id="cclogo">
-                    <img src="./Assets/bLogo.png" alt="logotipo da codecreator">
-                </a>
-                <a href="#" id="menuBar">
-                    <img src="./Assets/menubutton.png" alt="">
-                </a>
-            </div>            
-            <div class="navlinks">
-                <ul>
-                    <li>
-                        <a href="#hero">
-                            Início
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about">
-                            Acerca
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#services">
-                            Serviços
-                        </a>
-                    </li>
-                    </li>
-                    <li>
-                        <a href="#portfolio">
-                            Portfólio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contacts">
-                            Contactos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="btn">
-                            <img src="./Assets/support.png" alt="">
-                            Suporte
-                        </a>
-                    </li>
-                </ul>
+    <header  class="nav-container">
+        <nav class="navbar">
+            <a href="#hero"><img src="./Assets/wLogo.png" alt="Logotipo da Code Creator"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-links">Início</a></li>
+                <li><a href="#about" class="nav-links">Acerca</a></li>
+                <li><a href="#services" class="nav-links">Serviços</a></li>
+                <li><a href="#portfolio" class="nav-links">Portfólio</a></li>
+                <li><a href="#contacts" class="nav-links">Contactos</a></li>
+                <li><a href="#" class="nav-links nav-links-btn">Suporte</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -437,12 +413,11 @@
             }
         });
     </script>
-    <script>
-            
+    <script>            
             function openChat() {
                 window.open("https://wa.me/+258874855635", "chat", "width=600,height=800");
             }
-
     </script>
+    <script src="./JS/app.js"></script>
 </body>
 </html>
