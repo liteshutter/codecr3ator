@@ -683,7 +683,7 @@ footer .container .content .links ul li a{
     }
 
     .nav-links:hover{
-        background-color: var(--white);
+        background-color: var(--swawnsdown);
         color: var(--blue);
         transition: all .4s ease-out;
     }
