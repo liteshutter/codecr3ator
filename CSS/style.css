@@ -11,6 +11,7 @@ html{
 }
 
 body{
+    background-color: #f4f4f4;
     font-family: 'Poppins', sans-serif;
     color: #3E3E3E; 
 }
@@ -25,6 +26,7 @@ body{
     --liteblue: #E1E7FC;
     --orangered: #ff5100;
     --darkblue: #042875;
+    --swawnsdown: #ddeee8;
 }
 
 .nav-container{
@@ -49,7 +51,6 @@ body{
 }
 
 #navbar-logo{
-    color: var(--white);
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -163,7 +164,7 @@ h1{
 #hero .container .content .contentA button{
     padding: 10px 14px;
     background-color: var(--blue);
-    color: #fff;
+    color: var(--swawnsdown);
     font-weight: 600;
     border: 0;
     border-radius: 0 15px 15px;
@@ -350,7 +351,7 @@ h4{
 #services .container .boxes .box a{
     position: absolute;
     background-color: var(--blue);
-    color: var(--white);
+    color: var(--swawnsdown);
     margin: 400px;
     padding: 5px 20px;
     border: 0;
@@ -401,7 +402,7 @@ h4{
 #portfolio .container .boxes .box a{
     background-color: var(--blue);
     width: 100%;
-    color: var(--white);
+    color: var(--swawnsdown);
     text-decoration: none;
     text-align: center;
     padding: 20px 0 20px;
@@ -422,7 +423,7 @@ h4{
 #branding h4{
     font-size: 50px;
     font-weight: 800;
-    background: -webkit-linear-gradient(45deg, var(--white), var(--orangered));
+    background: -webkit-linear-gradient(45deg, var(--swawnsdown), var(--orangered));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -536,7 +537,7 @@ h4{
     margin-bottom: 50px;
     border: 0;
     background-color: var(--blue);
-    color: var(--white);
+    color: var(--swawnsdown);
     font-size: 16px;
     border-radius: 5px;
 }
@@ -574,8 +575,8 @@ footer .container .content .links, .pageInfo{
 }
 
 h5{
-    font-size: 16px;
-    color: var(--white);
+    font-size: 20px;
+    color: var(--swawnsdown);
     font-weight: 600;
 }
 
@@ -589,7 +590,7 @@ footer .container .content .links ul{
 footer .container .content .links ul li a{
     text-decoration: 0;
     font-size: 14px;
-    color: var(--white);
+    color: var(--swawnsdown);
 }
 
 .pageInfo img{
@@ -607,7 +608,7 @@ footer .container .content .links ul li a{
 }
 
 .cr p{
-    color: var(--white);
+    color: var(--swawnsdown);
     font-size: 14px;
 }
 
