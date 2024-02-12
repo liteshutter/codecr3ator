@@ -706,7 +706,7 @@ footer .container .content .links ul li a{
         padding: 0;
         border-radius: 0;
         background-color: var(--blue);
-        color: var(--white);
+        color: var(--swawnsdown);
         transition: all .4s ease-out;
     }
 
