@@ -19,9 +19,12 @@ body{
 
 :root{
     --blue: #0d6efd;
+    --deepblue: #0151ff;
     --darkgray: #3d3d3d;
     --white: #fff;
-    --fadedblue: #dde9ff;
+    --liteblue: #E1E7FC;
+    --orangered: #ff5100;
+    --darkblue: #042875;
 }
 
 .nav-container{
@@ -98,7 +101,7 @@ body{
 /* Hero Section Start */
 
 #hero{
-    background-color: var(--fadedblue);    
+    background-color: var(--liteblue);    
     height: 480px;
 }
 
@@ -131,7 +134,7 @@ h1{
     width: 495px;
     font-size: 40px;
     font-weight: 800;
-    background: -webkit-linear-gradient(45deg, #0151ff, #ff5100);
+    background: -webkit-linear-gradient(45deg, var(--deepblue), var(--orangered));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -147,7 +150,7 @@ h1{
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: #3E3E3E;
+    color: var(--darkgray);
     font-weight: 400;
     font-size: 14px;
 }
@@ -158,8 +161,8 @@ h1{
 }
 
 #hero .container .content .contentA button{
-    padding: 8px 14px;
-    background-color: #276FD8;
+    padding: 10px 14px;
+    background-color: var(--blue);
     color: #fff;
     font-weight: 600;
     border: 0;
@@ -176,7 +179,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #276FD8;
+    background-color: var(--blue);
     border: none;
     border-radius: 50px 50px 50px 0px;
     width: 65px;
@@ -186,7 +189,7 @@ h1{
 }
 
 #hero #btnwsapp:hover{
-    background-color: #042875;
+    background-color: var(--darkblue);
     transition: .3s ease-in;
 }
 
@@ -205,14 +208,14 @@ h1{
 }
 
 #highlight .boxes .box{    
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
     width: 350px; height: 250px;
 }
 
 #highlight .boxes .box:hover{
-    border: 1px solid #0151ff;
+    border: 1px solid var(--deepblue);
     transition: .2s ease-in;
 }
 
@@ -221,21 +224,21 @@ h1{
 }
 
 h3{
-    color: #3E3E3E;
+    color: var(--darkgray);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 #highlight .boxes .box p{
     font-size: 14px;
     font-weight: 400;
-    color: #276FD8;
+    color: var(--blue);
     text-decoration: underline;
     padding: 5px 0 0;
 }
 
 #highlight .boxes .box ul{
-    color: #3E3E3E;
+    color: var(--darkgray);
     font-size: 14px;
     padding: 10px 0 0 15px;
 }
@@ -263,13 +266,13 @@ h3{
 h2{
     font-size: 25px;
     font-weight: 600;
-    background: -webkit-linear-gradient(45deg, #0151ff, #ff2600);
+    background: -webkit-linear-gradient(45deg, var(--deepblue), var(--orangered));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #about .container .content .box p{
-    color: #3E3E3E;
+    color: var(--darkgray);
     text-align: justify;
     width: 600px;
 }
@@ -305,18 +308,18 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;  
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
     width: 350px; height: 500px;
     padding: 20px;    
-    border: 1px solid #276FD8;
+    border: 1px solid var(--deepblue);
 }
 
 #services .container .boxes .box:hover{
-    background-color: #dde9ff;
+    background-color: var(--liteblue);
     transition: .1s ease-in;
-    border: 0px solid #276FD8;
+    border: 0px solid var(--deepblue);
 }
 
 #services .container .boxes .box{
@@ -326,7 +329,7 @@ h2{
 h4{
     font-size: 20px;
     font-weight: 600;    
-    background: -webkit-linear-gradient(45deg, #0151ff, #ff505f);
+    background: -webkit-linear-gradient(45deg, var(--deepblue), var(--orangered));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -339,15 +342,15 @@ h4{
 }
 
 #services .container .boxes .box .content ul li{
-    color: #3E3E3E;
+    color: var(--darkgray);
     font-size: 14px;
     padding: 10px 0;
 }
 
 #services .container .boxes .box a{
     position: absolute;
-    background-color: #276FD8;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--white);
     margin: 400px;
     padding: 5px 20px;
     border: 0;
@@ -379,15 +382,15 @@ h4{
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
-    background-color: #ffffff;
-    border: 1px solid #276FD8;
+    background-color: var(--white);
+    border: 1px solid var(--deepblue);
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
     width: 350px; height: 350px;
 }
 
 #portfolio .container .boxes .box:hover{
-    background-color: #dde9ff;
+    background-color: var(--liteblue);
 }
 
 #portfolio .container .boxes .box img{
@@ -396,9 +399,9 @@ h4{
 }
 
 #portfolio .container .boxes .box a{
-    background-color: #276FD8;
+    background-color: var(--blue);
     width: 100%;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     text-align: center;
     padding: 20px 0 20px;
@@ -411,7 +414,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #276FD8;
+    background-color: var(--blue);
     width: 100%;
     height: 100px;
 }
@@ -419,7 +422,7 @@ h4{
 #branding h4{
     font-size: 50px;
     font-weight: 800;
-    background: -webkit-linear-gradient(45deg, #ffffff, #ff505f);
+    background: -webkit-linear-gradient(45deg, var(--white), var(--orangered));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -444,7 +447,7 @@ h4{
 
 #logomarks .content .boxes .box{
     position: relative;
-    background: #276FD8;
+    background: var(--blue);
     margin: 5px;
     width: 200px;
     height: 200px;
@@ -453,7 +456,7 @@ h4{
 }
 
 #logomarks .content .boxes .box:hover{
-    background-color: #dde9ff;
+    background-color: var(--liteblue);
     transition: .3s ease-in;
 }
 
@@ -474,7 +477,7 @@ h4{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #dde9ff;
+    background-color: var(--liteblue);
     margin: 20vh 0 0;
     width: 100%;
 }
@@ -486,7 +489,7 @@ h4{
 #contacts h4{
     font-size: 50px;
     font-weight: 800;
-    background: -webkit-linear-gradient(45deg, #0151ff, #ff505f);
+    background: -webkit-linear-gradient(45deg, var(--deepblue), var(--orangered));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 50px 0 0;
@@ -532,14 +535,14 @@ h4{
     padding: 10px 30px;
     margin-bottom: 50px;
     border: 0;
-    background-color: #276FD8;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--white);
     font-size: 16px;
     border-radius: 5px;
 }
 
 #contacts .container button:hover{
-    background-color: #042875;
+    background-color: var(--darkblue);
     cursor: pointer;
 }
 
@@ -549,7 +552,7 @@ h4{
 
 footer{
     display: flex;
-    background-color: #4e95ff;
+    background-color: var(--blue);
 }
 
 footer .container{
@@ -572,7 +575,7 @@ footer .container .content .links, .pageInfo{
 
 h5{
     font-size: 16px;
-    color: #fff;
+    color: var(--white);
     font-weight: 600;
 }
 
@@ -586,7 +589,7 @@ footer .container .content .links ul{
 footer .container .content .links ul li a{
     text-decoration: 0;
     font-size: 14px;
-    color: #fff;
+    color: var(--white);
 }
 
 .pageInfo img{
@@ -604,7 +607,7 @@ footer .container .content .links ul li a{
 }
 
 .cr p{
-    color: #fff;
+    color: var(--white);
     font-size: 14px;
 }
 
