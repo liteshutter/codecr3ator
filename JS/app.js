@@ -19,12 +19,19 @@ function sendMail(){
         comment: document.querySelector("#message").value,
     };
 
+    document.getElementById('name').value='';
+    document.getElementById('surname').value='';
+    document.getElementById('email').value='';
+    document.getElementById('contact').value='';
+    document.getElementById('message').value='';
+
     var serviceID = "service_uynr6q8"
     var templateID = "template_5mlualf"
 
     emailjs.send(serviceID, templateID, params)
     .then( res => {
-        alert("Email Sent Sucessfully!")
+        alert("Email Sent Sucessfully!")        
     })
     .catch();
 }
+
