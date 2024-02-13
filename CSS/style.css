@@ -87,6 +87,7 @@ body{
     border-radius: 10px;
     border: solid 1px var(--blue);
     transition: all .3s ease-out;
+    cursor: pointer;
 }
 
 .menu-toggle .bar{
@@ -640,7 +641,8 @@ footer .container .content .links ul li a{
 
 
 
-@media screen and (max-width:720px) {
+@media (max-width:450px) {
+
     *{
         box-sizing: border-box;
         margin: 0;
@@ -683,7 +685,7 @@ footer .container .content .links ul li a{
     }
 
     .nav-links:hover{
-        background-color: var(--white);
+        background-color: var(--swawnsdown);
         color: var(--blue);
         transition: all .4s ease-out;
     }
@@ -698,7 +700,7 @@ footer .container .content .links ul li a{
         border-radius: 0;
         background-color: var(--darkgray);
         color: var(--white);
-        transition: all .4s ease-out;
+        transition: all .4s ease-out;        
     }
 
     .nav-links-btn:hover{
@@ -706,7 +708,7 @@ footer .container .content .links ul li a{
         padding: 0;
         border-radius: 0;
         background-color: var(--blue);
-        color: var(--swawnsdown);
+        color: var(--white);
         transition: all .4s ease-out;
     }
 
