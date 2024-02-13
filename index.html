@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="./CSS/style.css">
 
+    <link rel="stylesheet" href="./Assets/CSS/typing.css">
+
+    <link rel="stylesheet" href="./Assets/CSS/chat.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,400;1,600;1,800;1,900&display=swap" rel="stylesheet">
@@ -34,7 +38,7 @@
                 <li><a href="#services" class="nav-links">Serviços</a></li>
                 <li><a href="#portfolio" class="nav-links">Portfólio</a></li>
                 <li><a href="#contacts" class="nav-links">Contactos</a></li>
-                <li><a href="#" class="nav-links nav-links-btn">Suporte</a></li>
+                <li><a class="nav-links nav-links-btn" id="chatbox-button">Suporte</a></li>
             </ul>
         </nav>
     </header>
@@ -49,13 +53,13 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img src="./Assets/check.png" alt="icone de verificado">
+                                    <img src="./Assets/check.png" alt="">
                                     Domínio Grátis
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="./Assets/check.png" alt="icone de verificado">
+                                    <img src="./Assets/check.png" alt="">
                                     Suporte 24/7
                                 </a>
                             </li>
@@ -72,11 +76,36 @@
                     </div>
                 </div>
                 <div class="content" id="webflow">
-                    <img src="./Assets/webflow.png" alt="imagem de ui/ux">
+                    <img src="./Assets/webflow.png" alt="">
                 </div>
             </div>
 <!--             <a id="button" href="#"><img src="./Assets/whatsappb.png" alt=""></a> -->
             <button id="btnwsapp" onclick="openChat()"><img src="./Assets/whatsappb.png" alt="icon de whatsapp"></button>
+        
+            <div class="chatbox">
+                <div class="chatbox-support">
+                    <div class="chatbox-header">
+                        Supporte
+                    </div>
+                    <div class="chatbox-messages">
+                        <div class="messages-item messages-item-operator">
+                            Olá! Como podemos ajudar?
+                        </div>
+                        <div class="messages-item messages-item-visitor">
+                            
+                        </div>
+                        <div class="messages-item messages-item-typing">
+                            <span class="messages-dot"></span>
+                            <span class="messages-dot"></span>
+                            <span class="messages-dot"></span>
+                        </div>
+                    </div>
+                    <div class="chat-footer">
+                        <input type="text" id="textBox" name="message" placeholder="Escreva aqui a sua mensagem" required="required">
+                        <button onclick = "send();"> <img src="./Assets/send.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="highlight">
             <div class="container">
@@ -309,7 +338,7 @@
                     <input class="frm" id="contact" type="contact" name="email" placeholder="Contacto" required="required">
                     <textarea class="frm" id="message" name="comment" placeholder="Sua Mensagem..." required="required"></textarea>
                 </div>
-                <button onclick = "sendMail();">Submeter</button>
+                <button onclick = "sendMail();">Submeter</button>           
             </div>
 
             <p>*A promoção é válida apenas para o primeiro ano, a renovação será cobrada de acordo com a taxa normal.</p>
@@ -419,6 +448,9 @@
             }
     </script>
     <script src="./JS/app.js"></script>
+    <script src="./Assets/JS/Chat.js"></script>
+    <script src="./Assets/JS/app.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 </html>
