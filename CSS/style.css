@@ -44,6 +44,7 @@ body{
     width: 80%;
     max-width: 1720px;
     margin: 0 auto;
+    z-index: 2;
 }
 
 .navbar img{
@@ -63,6 +64,7 @@ body{
     text-align: center;
     width: 70%;
     justify-self: end;
+    z-index: 2;
 }
 
 .nav-links{
@@ -73,6 +75,7 @@ body{
 .nav-links:hover{
     color: var(--blue);
     transition: all .3s ease-in-out;
+    z-index: 2;
 }
 
 .nav-links-btn{
