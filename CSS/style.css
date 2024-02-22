@@ -30,6 +30,7 @@ body{
     --swawnsdown: #ddeee8;
     --fineblue: #2A45CA;
     --heavyblue: #1C2362;
+    --cyan: #8EFBF7;
 }
 
 .nav-container{
@@ -114,7 +115,7 @@ body{
 #hero{
     display: flex;
     background: linear-gradient(to top, var(--fineblue), var(--heavyblue));    
-    height: 680px;
+    height: 780px;
     align-items: center;
 }
 
@@ -144,12 +145,16 @@ body{
     gap: 20px;
 }
 
+.nav-container a img{
+    width: 80px;
+}
+
 #hero .circular{
     position: absolute;
     border-radius: 100%;
     border: 1px solid #f4f4f4;
     width: 80%;
-    height: 130%;
+    height: 150%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -180,6 +185,20 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.9;
+    z-index: 1;
+}
+
+#hero .circular .innercirc .centercirc .minuscirc{
+    position: absolute;
+    border-radius: 100%;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .2;
     z-index: 1;
 }
 
