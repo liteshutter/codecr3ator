@@ -28,8 +28,8 @@ body{
     --orangered: #ff5100;
     --darkblue: #042875;
     --swawnsdown: #ddeee8;
-    --fineblue: #2A45CA;
-    --heavyblue: #1C2362;
+    --fineblue: #2f7ff9;
+    --heavyblue: #072552;
     --cyan: #8EFBF7;
 }
 
@@ -958,3 +958,4 @@ footer .container .content .links ul li a{
         z-index: 1;
     }
 }
+
