@@ -313,7 +313,7 @@ h3{
 #highlight .boxes .box ul{
     color: var(--darkgray);
     font-size: 14px;
-    padding: 10px 0 0 15px;
+    padding: 10px 0 10px 15px;
 }
 
 /* About section start */
