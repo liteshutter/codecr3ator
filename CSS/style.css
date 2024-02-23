@@ -52,10 +52,8 @@ body{
     z-index: 2;
 }
 
-#navbar-logo{
-    justify-self: start;
-    margin-left: 20px;
-    cursor: pointer;
+.navbar img{
+    width: 50px;
 }
 
 .nav-menu{
@@ -142,9 +140,44 @@ body{
     gap: 20px;
 }
 
-.nav-container a img{
-    width: 60px;
+/* Reset default list styles */
+ul.checklist {
+    list-style: none;
+    padding: 0;
 }
+
+/* Style checklist items */
+ul.checklist li {
+    position: relative;
+    padding-left: 18px; /* Adjust as needed */
+    margin-bottom: 0px; /* Adjust as needed */
+    line-height: 1.5;
+}
+
+/* Create the checkbox style */
+ul.checklist li::before {
+    content: '\2714'; /* Unicode character for a checkmark */
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 15px; /* Adjust as needed */
+    height: 15px; /* Adjust as needed */
+    background-color: var(--white); /* Background color for the checkbox */
+    border-radius: 50px; /* Adjust as needed */
+    text-align: center;
+    line-height: 15px;
+    color: var(--fineblue); /* Color of the checkmark */
+    font-size: 12px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+/* Style the checked state */
+ul.checklist li.checked::before {
+    background-color: #4CAF50; /* Background color when checked */
+    border-color: #4CAF50; /* Border color when checked */
+}
+  
 
 #hero .circular{
     position: absolute;
