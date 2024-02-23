@@ -290,6 +290,7 @@ h1{
 #highlight .boxes .box:hover{
     border: 1px solid var(--white);
     transition: .2s ease-in;
+    cursor: pointer;
 }
 
 #highlight .boxes .box{
