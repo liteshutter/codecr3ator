@@ -734,7 +734,7 @@ footer .container .content .links ul li a{
         margin: 0;
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 70px;
         left: -100%;
         opacity: 0;
         transition: all.5s ease;
