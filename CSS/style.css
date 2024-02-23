@@ -282,12 +282,13 @@ h1{
 #highlight .boxes .box{    
     background-color: var(--white);
     border-radius: 10px;
+    border: 1px solid var(--blue);
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
     width: 350px; height: 250px;
 }
 
 #highlight .boxes .box:hover{
-    border: 1px solid var(--deepblue);
+    border: 1px solid var(--white);
     transition: .2s ease-in;
 }
 
