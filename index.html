@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Cr3ator</title>
 
-    <link rel="stylesheet" href="../Assets/CSS/website.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 
-    <link rel="stylesheet" href="../Assets/CSS/typing.css">
+    <link rel="stylesheet" href="./Assets/CSS/typing.css">
 
-    <link rel="stylesheet" href="../Assets/CSS/chat.css">
+    <link rel="stylesheet" href="./Assets/CSS/chat.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
 <body>
     <header  class="nav-container">
         <nav class="navbar">
-            <a href="#hero"><img id="logo" src="../Assets/codec.png" alt="Logotipo da Code Creator"></a>
+            <a href="#hero"><img id="logo" src="./Assets/code.png" alt="Logotipo da Code Creator"></a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -43,38 +43,308 @@
     </header>
     <main>
         <section id="hero">
-            <h1>
-                Eleve sua presença online e desbloquea todo o potencial de seus empreendimentos digitais
-            </h1>
-            <img src="" alt="">
-        </section>
-        <section>
-            <div class="intro">
-                <h2>
-                    Bem vido à Code Creator – Criando Excelência Digital!
-                </h2>
-                <div class="box">
-                    <div class="content">
+            <div class="container">
+                <div class="content">
+                    <div class="contentA">
+                        <h1>
+                            Criando Excelência Digital!
+                        </h1>
                         <ul class="checklist">
-                            <li>Resposinvidade</li>
-                            <li>SEO Otimizado</li>
-                            <li>Segurança</li>
-                            <li>Design Atraente e Funcionalidade Intuitiva</li>
-                            <li>Integração com Redes Sociais</li>
-                            <li>Suporte Técnico e Manutenção</li>
+                            <li>
+                                <a href="#">
+                                    Domínio Grátis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Suporte 24/7
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#contacts">                                
+                                    <button>
+                                        Contacte-nos
+                                    </button>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="text">  
-                        <h4>Desenvolvimento de Website</h4>                      
-                        <p>
-                            Se está pronto para elevar sua presença online e desbloquear todo o potencial
-                            de seus empreendimentos digitais, não procure mais! Podes achar a solução na Code Creator,
-                            estamos comprometidos em redefinir a maneira como você se envolve com o cenário digital.
-                        </p>
-                        <a href="#">Pedir Cotação</a>
+                </div>
+                <div class="content" id="webflow">
+                    <img src="./Assets/webflow.png" alt="">
+                </div>
+            </div>
+
+            <button id="btnwsapp" onclick="openChat()"><img src="./Assets/whatsappb.png" alt="icon de whatsapp"></button>
+        
+            <div class="chatbox">
+                <div class="chatbox-support">
+                    <div class="chatbox-header">
+                        Supporte
+                    </div>
+                    <div class="chatbox-messages">
+                        <div class="messages-item messages-item-operator">
+                            Olá! Como podemos ajudar?
+                        </div>
+                        <div class="messages-item messages-item-visitor">
+                            
+                        </div>
+                        <div class="messages-item messages-item-typing">
+                            <span class="messages-dot"></span>
+                            <span class="messages-dot"></span>
+                            <span class="messages-dot"></span>
+                        </div>
+                    </div>
+                    <div class="chat-footer">
+                        <input type="text" id="textBox" name="message" placeholder="Escreva aqui a sua mensagem" required="required">
+                        <button onclick = "send();"> <img src="./Assets/send.png" alt=""></button>
                     </div>
                 </div>
             </div>
+            <div class="circular">
+                <div class="innercirc">
+                    <div class="centercirc">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="highlight">
+            <div class="container">
+                <div class="content">
+                    <div class="boxes">
+                        <div class="box">
+                            <h3 id="th">Website</h3>
+                            <a href="./html/website.html"><p>Partindo de 11 999,00 mt</p></a>
+                            <ul>
+                                <li>Design Responsivo</li>
+                                <li>Optimização de motores de busca (SEO)</li>
+                                <li>Segurança</li>
+                                <li>Suporte Técnico e Manutênção</li>                                
+                                <li>Hospedagem grátis (1º Ano)</li>
+                                <li>Domínio (.com)</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3  id="nd">Online Store</h3>
+                            <a href="#"><p>Partindo de 23 999,00 mt</p></a>
+                            <ul>
+                                <li>Navegação Intuitiva</li>
+                                <li>Resposinvidade</li>
+                                <li>Segurança</li>
+                                <li>Suporte Técnico e Manutênção</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3 id="rd">Brandig</h3>
+                            <a href="#"><p>Partindo de 5 729,00 mt</p></a>
+                            <ul>
+                                <li>Diferenciação</li>
+                                <li>Reconhecimento</li>
+                                <li>Credibilidade</li>
+                                <li>Relevançia e Consistência</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="content">
+                    <div class="box">
+                        <div class="about">
+                            <h2>Acerca de Nós</h2>
+                            <p>
+                                Bem-vindo à nossa plataforma dedicada a proporcionar soluções inovadoras e esteticamente
+                                atraentes para o mundo digital. Somos uma equipe comprometida em transformar ideias em
+                                experiências interativas e visualmente impactantes por meio de nossos serviços abrangentes de desenvolvimento de aplicações web e design.
+                            </p>
+                        </div>
+                        <div class="pic">
+                            <img src="./Assets/expert.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">   
+            <div class="header">
+                <h2>Nossos Serviços</h2>
+            </div>         
+            <div class="container">
+                <div class="boxes">
+                    <div class="box">
+                        <h4>Websites</h4>
+                        <div class="content">
+                            <ul>
+                                <li>Resposinvidade</li>
+                                <li>SEO Otimizado</li>
+                                <li>Segurança</li>
+                                <li>Design Atraente e Funcionalidade <br> Intuitiva</li>
+                                <li>Integração com Redes Sociais</li>
+                                <li>Suporte Técnico e Manutenção</li>
+                            </ul>
+                        </div>
+                        <a href="#" id="btnS">Detalhes</a>
+                    </div>
+                    <div class="box">
+                        <h4>Hospedagem</h4>
+                        <div class="content">
+                            <ul>
+                                <li>Domínio (.com) Grátis (1º Ano) </li>
+                                <li>Certificação SSL</li>
+                                <li>5 Caixas de Correio Electrônico</li>
+                                <li>Cópias de Segurança</li>
+                                <li>Migração Grátis</li>
+                                <li>Malware Scanner</li>
+                                <li>Suporte Técnico 24/7</li>
+                            </ul>
+                        </div>
+                        <a href="#">Detalhes</a>
+                    </div>
+                    <div class="box">
+                        <h4>Design Gráfico</h4>
+                        <div class="content">
+                            <ul>
+                                <li>Criatividade e Originalidade</li>
+                                <li>Experiência e Competência</li>
+                                <li>Compreensão da Marca</li>
+                                <li>Diferenciação</li>
+                                <li>Adaptabilidade</li>
+                                <li>Satisfação do Cliente</li>
+                            </ul>
+                        </div>
+                        <a href="#">Detalhes</a>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <h4>Redes</h4>
+                        <div class="content">
+                            <ul>
+                                <li>Instalação e Configuração de <br> Redes de Computadores e <br> Periféricos</li>
+                                <li>Manutenção Preventiva (1º Ano)</li>
+                                <li>Suporte Técnico Eficiente</li>
+                                <li>Atualização Tecnológica</li>
+                                <li>Treinamento de Utilizador</li>
+                                <li>Backup e Recuperação de Dados</li>
+                            </ul>
+                        </div>                        
+                        <a href="#">Detalhes</a>
+                    </div>
+                    <div class="box">
+                        <h4>Criação de Conteúdo</h4>
+                        <div class="content">
+                            <ul>
+                                <li>Gestão de Redes Sociais</li>
+                                <li>Marketing de Conteúdo</li>
+                                <li>Consultoria e Suporte</li>
+                                <li>Treinamento da Equipe</li>
+                                <li>Produção de Conteúdo</li>
+                                <li>Estratégia de Conteúdo</li>
+                                <li>Pesquisa e Planeamento</li>
+                            </ul>
+                        </div>
+                        <a href="#">Detalhes</a>
+                    </div>
+                    <div class="box">
+                        <h4>Suporte</h4>
+                        <div class="content">
+                            <ul>
+                                <li>Consultoria em TIC's</li>
+                                <li>Suporte Técnico</li>
+                                <li>Suporte Remoto</li>
+                                <li>Troubleshooting</li>
+                            </ul>
+                        </div>
+                        <a href="#">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="header">
+                <h2>Portfólio</h2>
+            </div>         
+            <div class="container">
+                <div class="boxes">
+                    <div class="box">
+                        <h4>Liteshuter</h4>
+                        <div class="content">
+                            <img src="./Assets/liteshutter.png" alt="">
+                        </div>
+                        <a href="https://Liteshuter.com">www.liteshuter.com</a>
+                    </div>
+                    <div class="box">
+                        <h4>Rui Light</h4>
+                        <div class="content">
+                            <img src="./Assets/ruilight.png" alt="">
+                        </div>
+                        <a href="https://ruilight.netlify.app">ruilight.netlify.app</a>
+                    </div>
+                    <div class="box">
+                        <h4>Code Cr3ator</h4>
+                        <div class="content">
+                            <img src="./Assets/codecr3ator.png" alt="">
+                        </div>
+                        <a href="https://codecr3ator.com">www.codecr3ator.com</a>
+                    </div>
+                </div>
+        </section>
+        <section id="branding">
+            <h4>Branding</h4>
+        </section>
+        <section id="logomarks">
+            <div class="content">
+                <div class="boxes">
+                    <div class="box">
+                        <img src="./Assets/img/creativehub/ag.png" alt="" width="100px">
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <img src="./Assets/img/creativehub/ba.png" alt="" width="100px">
+                    </div>
+                    <div class="box">
+                        <img src="./Assets/img/creativehub/code_cr3ator.png" alt="" width="100px">
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <img src="./Assets/img/creativehub/room.png" alt="" width="100px">
+                    </div>
+                    <div class="box">
+                        <img src="./Assets/img/creativehub/lalji.png" alt="" width="100px">
+                    </div>
+                    <div class="box">
+                        <img src="./Assets/img/creativehub/mlm.png" alt="" width="100px">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <h4>Solicite Uma Consultoria</h4>
+            <div class="container">               
+                <p>
+                    Nossa equipe dedicada de especialistas técnicos está pronta para ajudá-lo com qualquer
+                    problema que você possa encontrar. De falhas de software a problemas de hardware,
+                    nós podemos ajudar. Ligue (+258) 87 485 5635.
+                </p>
+                <div class="names">
+                        <input class="frm" id="name" type="text" name="fname" placeholder="Nome" required="required">
+                        <input class="frm" id="surname" type="text" name="lname" placeholder="Sobrenome" required="required">
+                </div>
+                <div class="info">
+                    <input class="frm" id="email" type="email" name="email" placeholder="Email" required="required">
+                    <input class="frm" id="contact" type="contact" name="email" placeholder="Contacto" required="required">
+                    <textarea class="frm" id="message" name="comment" placeholder="Sua Mensagem..." required="required"></textarea>
+                </div>
+                <button onclick = "sendMail();">Submeter</button>           
+            </div>
+
+            <p>*A promoção é válida apenas para o primeiro ano, a renovação será cobrada de acordo com a taxa normal.</p>
         </section>
     </main>
     <footer>
@@ -137,18 +407,18 @@
             </div>
             <div class="content1">
                 <div class="pageInfo">
-                    <img id="logo" src="../Assets/codec.png" alt="">
+                    <a href="#"><img id="flogo" src="./Assets/codec.png" alt=""></a>
                     <div class="sociallinks">
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/profile.php?id=61556028361588"><img src="../Assets/face.png" alt=""></a>
+                                <a href="https://www.facebook.com/profile.php?id=61556028361588"><img src="./Assets/face.png" alt=""></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/code_cr3ator?igsh=cHM2amtwa3RvZTB1&utm_source=qr"><img src="../Assets/insta.png" alt=""></a>
+                                <a href="https://www.instagram.com/code_cr3ator?igsh=cHM2amtwa3RvZTB1&utm_source=qr"><img src="./Assets/insta.png" alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="../Assets/youtube.png" alt=""></a>
-                            </li>.
+                                <a href="#"><img src="./Assets/youtube.png" alt=""></a>
+                            </li>
                         </ul>
                     </div>
                     <div class="cr">
@@ -179,9 +449,9 @@
                 window.open("https://wa.me/+258874855635", "chat", "width=600,height=800");
             }
     </script>
-    <script src="../JS/app.js"></script>
-    <script src="../Assets/JS/Chat.js"></script>
-    <script src="../Assets/JS/app.js"></script>
+    <script src="./JS/app.js"></script>
+    <script src="./Assets/JS/Chat.js"></script>
+    <script src="./Assets/JS/app.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
