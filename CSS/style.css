@@ -793,8 +793,6 @@ footer .container .content .links ul li a{
 
 
 
-
-
 @media screen and (max-width: 720px) {
 
     *{
@@ -804,7 +802,7 @@ footer .container .content .links ul li a{
     }
 
     .nav-container{
-        position: fixed;
+        align-items: center;
     }
 
     .nav-menu{
@@ -820,10 +818,6 @@ footer .container .content .links ul li a{
         transition: all.5s ease;
     }
 
-    #navbar-logo{
-        margin-left: 20px;
-    }
-
     .nav-menu.active{
         background: var(--white);
         left: 0;
@@ -834,6 +828,7 @@ footer .container .content .links ul li a{
     .nav-links{
         text-align: center;
         line-height: 60px;
+        padding-top: 0;
         width: 100%;
         display: table;
     }
@@ -842,10 +837,6 @@ footer .container .content .links ul li a{
         background-color: var(--blue);
         color: var(--white);
         transition: all .4s ease-out;
-    }
-
-    .navbar{
-        width: 90%;
     }
 
     .nav-links-btn{
@@ -864,6 +855,10 @@ footer .container .content .links ul li a{
         background-color: var(--blue);
         color: var(--white);
         transition: all .4s ease-out;
+    }
+
+    .navbar #logo{
+        margin: -10px -20px;
     }
 
     #mobile-menu{
@@ -1027,6 +1022,13 @@ footer .container .content .links ul li a{
         flex-direction: column;
     }
 
+    footer .container .content1{        
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 5px;
+    }
+
     footer .container .content .links{
         padding: 50px 0 0;
     }
@@ -1034,7 +1036,6 @@ footer .container .content .links ul li a{
     footer .container .content #llink{
         padding: 0 0 50px;
     }
-
     #hero .circular{
         position: absolute;
         border-radius: 100%;
@@ -1049,4 +1050,3 @@ footer .container .content .links ul li a{
         display: none;
     }
 }
-
